@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FWK-Pg-lBP">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Happiness View Controller-->
+        <scene sceneID="9yL-wY-TKN">
+            <objects>
+                <viewController id="FWK-Pg-lBP" customClass="HappinessViewController" customModule="Happiness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0uP-VV-DIu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Qqk-ZC-Zz1" customClass="Faceview" customModule="Happiness" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scale">
+                                        <real key="value" value="0.94999999999999996"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Qqk-ZC-Zz1" firstAttribute="centerX" secondItem="0uP-VV-DIu" secondAttribute="centerX" id="Yzn-ui-3X2"/>
+                            <constraint firstItem="Qqk-ZC-Zz1" firstAttribute="top" secondItem="nVx-4v-A2K" secondAttribute="top" id="eXo-rG-Rxi"/>
+                            <constraint firstItem="Qqk-ZC-Zz1" firstAttribute="bottom" secondItem="nVx-4v-A2K" secondAttribute="bottom" id="kvt-bB-MUm"/>
+                            <constraint firstItem="Qqk-ZC-Zz1" firstAttribute="leading" secondItem="nVx-4v-A2K" secondAttribute="leading" id="rAe-FJ-VgW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nVx-4v-A2K"/>
+                    </view>
+                    <connections>
+                        <outlet property="faceView" destination="Qqk-ZC-Zz1" id="FlJ-HF-rJe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fiy-lR-say" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99.375" y="10"/>
+        </scene>
+    </scenes>
+</document>
